@@ -1,9 +1,44 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<body>
+    <head>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+        <meta charset="UTF-8">
 
-</body>
-</html> 
+        <title>Christmas Snow Background - The Web Taylor</title>
+
+        <script src="snow-background.js"></script>
+        <script>
+            window.onload = function() {
+              try {
+                snow.count = 30;   // number of flakes
+                snow.delay = 20;   // timer interval
+                snow.minSpeed = 2; // minimum movement/time slice
+                snow.maxSpeed = 5; // maximum movement/time slice
+                snow.start();
+              } catch(e) {
+                // no snow 🙁
+                console.log("Some snow error");
+              }
+            };
+        </script>
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+    <body>
+
+    <figure>
+        <figcaption>Numerically christmas!</figcaption>
+        <audio
+            controls
+            src="ChristmasSong.mp3">
+                Your browser does not support the
+                <code>audio</code> element.
+        </audio>
+    </figure>
+
+
+    </body>
+</html>
